@@ -112,6 +112,3 @@ Do not commit private raw data or generated thesis result files unless public sh
 - The analysis should be interpreted as exploratory, not diagnostic.
 - Candidate metabolites require targeted validation before biological claims are made.
 
-## License
-
-The code is shared under the MIT License. Raw data, thesis materials, and unpublished research results may have separate institutional restrictions.
