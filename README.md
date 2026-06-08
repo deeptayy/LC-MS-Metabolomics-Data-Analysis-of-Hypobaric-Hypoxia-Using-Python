@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 [![Metabolomics](https://img.shields.io/badge/omics-metabolomics-green)]()
 
-This is a beginner-friendly bioinformatics portfolio project based on my M.Sc. thesis context. The project shows how I organized metadata, wrote a simple Python analysis workflow, and reported metabolomics results cautiously without sharing unpublished raw data.
+This is a bioinformatics project based on my M.Sc. thesis. The project shows how I organized metadata, wrote a simple Python analysis workflow, and reported metabolomics results cautiously without sharing unpublished raw data.
 
 The public repository does not include raw metabolomics intensity values, complete statistical result tables, or confidential datasets. A small simulated demo dataset is included only so the code can be run and reviewed.
 
@@ -64,9 +64,9 @@ The private thesis workflow included:
 8. Running exploratory PLS/VIP analysis.
 9. Interpreting candidate metabolites cautiously.
 
-## Public Results Summary
+## Results Summary
 
-The private analysis suggested broad metabolomic differences between control and hypoxia groups. At a high level, the exploratory analysis showed:
+The analysis suggested broad metabolomic differences between control and hypoxia groups. At a high level, the exploratory analysis showed:
 
 - group-level separation in PCA;
 - a subset of metabolites/features passing screening criteria;
@@ -80,18 +80,6 @@ These findings are hypothesis-generating. Candidate metabolites should not be tr
 
 The files in `docs/example_figures/` are generated from simulated demo data. They are placeholders that show the type of visualization used in the workflow, not private thesis results.
 
-## Run The Demo
-
-The public demo uses simulated data with fake feature names. It is only meant to demonstrate the workflow.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-python scripts/metabolomics_pipeline.py --data-root data/demo --results-root results_demo
-```
-
-Do not commit private raw data or generated thesis result files unless public sharing is approved by the lab/institution.
 
 ## Skills Demonstrated
 
@@ -99,16 +87,7 @@ Do not commit private raw data or generated thesis result files unless public sh
 - Reading and processing CSV files with Python.
 - Using pandas, NumPy, SciPy, scikit-learn, statsmodels, and matplotlib.
 - Applying missing-value filtering.
-- Running beginner-level PCA and differential screening.
+- Running PCA and differential screening.
 - Creating exploratory visualizations such as PCA and volcano plots.
-- Reporting scientific limitations clearly.
 
-## Limitations
-
-- The public demo data are simulated and are not thesis results.
-- Raw thesis intensity values are not publicly available in this repository.
-- Complete generated result tables and figures from the private analysis are not included.
-- Untargeted metabolomics annotations may include uncertain compound matches.
-- The analysis should be interpreted as exploratory, not diagnostic.
-- Candidate metabolites require targeted validation before biological claims are made.
 
